@@ -51,9 +51,9 @@ ctx.request.body一定是post请求，因为get的请求头里没有request.body
 ```
     npm install koa-bodyparser@next --save
 ```
-包含在请求正文中提交的键值对数据，默认是undefined，当使用body-parser和multer中间件时ctx.request.body是内置在中间件中的
+包含在请求正文中提交的键值对数据，默认是undefined，当使用body-parser和multer中间件时ctx.request.body是内置在中间件中的。
 
-ctx.params(暂时不能用)
+ctx.params获取请求参数对象
 
 ```
     const Koa = require('koa');
